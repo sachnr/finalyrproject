@@ -54,5 +54,8 @@
 					font-size: 14px;
 					font-weight:bold;
 				}
-
-      
+				
+				.modalpos{
+					width: 360px;
+					left: 480px;
+				}

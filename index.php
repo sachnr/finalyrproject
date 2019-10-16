@@ -2,6 +2,13 @@
 $title='College Erp';
 $page='home';
 include 'header.php';
+if ( isset($_GET['success']) && $_GET['success'] == 1 )
+{
+     // treat the succes case ex:
+     $message = "wrong answer";
+		echo "<script type='text/javascript'>M.toast({html: 'Message sent sucessfully!', classes: 'rounded'});
+				</script>";
+}
 ?>
   		<main>
 	  		<div class="container">
