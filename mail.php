@@ -56,7 +56,7 @@ $mail->Body ="college Id:".$cid."\n"."emailid: ".$emailcu."\n"."messsage:".$feed
 //send the message, check for errors
 if (!$mail->send()) {
     //echo "Mailer Error: " . $mail->ErrorInfo;
-    Header( 'Location: index.php?success=0' );
+    Header( 'Location: index.php?success=2' );
     exit();
 } 
 else {

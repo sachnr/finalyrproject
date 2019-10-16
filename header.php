@@ -55,7 +55,7 @@
 		                      <label>Enter password</label>
 		                      </div>
              
-	                         <p class="right"><a href="#signup" class="modal-trigger"><small>Forgot password</small></a></p>
+	                         <p class="right"><a href="#signup" class="modal-trigger"href="#" data-toggle="modal" data-target="#contactus"><small>Forgot password</small></a></p>
 	                         <input type="submit" name="submit" value="Login" class="cbtn waves-effect waves-light btn-small left col s12 discord">
                 
                              <div class="clearfix"></div>

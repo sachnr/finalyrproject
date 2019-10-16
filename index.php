@@ -4,10 +4,13 @@ $page='home';
 include 'header.php';
 if ( isset($_GET['success']) && $_GET['success'] == 1 )
 {
-     // treat the succes case ex:
-     $message = "wrong answer";
 		echo "<script type='text/javascript'>M.toast({html: 'Message sent sucessfully!', classes: 'rounded'});
 				</script>";
+}
+else if( isset($_GET['success']) && $_GET['success'] == 2 ){
+	echo "<script type='text/javascript'>M.toast({html: 'Message sent failed!', classes: 'rounded'});
+				</script>";
+
 }
 ?>
   		<main>
