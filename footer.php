@@ -6,7 +6,7 @@ $page='home';
         <a class="btn-floating btn-large waves-effect waves-light discord z-depth-2 pulse" href="#" data-toggle="modal" data-target="#contactus"><i class="material-icons">chat_bubble</i></a>
         </div>
 
-      <footer class="footer-section" id="footer">
+      <footer class="footer-section footer">
       <div class="footer-top">
         <div class="container">
               <div class="row">

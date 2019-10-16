@@ -1,12 +1,12 @@
 
-	    		#header{
+	    		.header{
 	    			position:fixed;
 					background-color: #181915;
 					width:100%;
 					height:60px;
 					text-align: center;
 					}
-				#footer{
+				.footer{
 					clear:both;
 					height: 170px;
 					width: 100%;
@@ -59,3 +59,5 @@
 					width: 360px;
 					left: 480px;
 				}
+
+		
