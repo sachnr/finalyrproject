@@ -9,10 +9,9 @@ $page='home';
 	  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	  	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	    <link rel="stylesheet" href="css/style.css">
 	    <link rel="stylesheet" href="css/materialize.min.css">
-		<link href="css/responsive.css" rel="stylesheet">
 		<link href="css/bootstrap.css" rel="stylesheet">
+	    <link rel="stylesheet" href="css/style.css">
 		<script src="js/materialize.min.js"></script>
     	<script src="js/jquery.js"></script>
  		<script src="js/popper.min.js"></script>
@@ -29,35 +28,48 @@ $page='home';
 	  				<div class="logo col s1">
                 		<figure><a href="index.php"><img src="images/erpban.png" alt="" style="height: 90px;"></a></figure>
                 	</div>
-	  				<div class="col s1 offset-s10">
-	  					<div class="info-box visible-md visible-lg">
-	  						<a class="waves-effect waves-light btn discord"href="#" data-toggle="modal" data-target="#myModal" id="myBtn">login</a>
+	  				<div class="col s4 m1 offset-m10">
+	  					<div class="info-box visible-xs visible-md visible-lg">
+	  						<a class="cbtn waves-effect waves-light btn discord"href="#" data-toggle="modal" data-target="#myModal" id="myBtn">login</a>
 	                    </div>
 	  				</div>
 	  			</div>
 	  			</div>
 	  		</header>
   		</div>
-
-	  		<div class="container"  id="sulocation">
-	  			<div class="row">
-	  				
-	  				<div class="col s4 offset-s8" >
+  		<main>
+	  		<div class="container">
+	  			<div class="row valign-wrapper add-height">
+	  				<div class="col s12 m4 offset-m8">
 	  					<form action="" method="POST">   
 
-	  						  <div class="card-panel z-depth-5 sublime">   
-		                      <h3 class="center">Signup</h3>
+	  						<div class="card-panel z-depth-5 sublime">   
+		                     <h3 class="center">Signup</h3>
 		                      
 		                      <div class="input-field">
 		                      <i class="material-icons prefix">account_circle</i>
-		                      <input type="text" name="username" placeholder="Enter username">
+		                      <input type="text" name="username">
+		                      <label>Enter username</label>
 		                      </div>
-		                  
+		                  		
+		                  	  <div class="input-field">
+		                      <i class="material-icons prefix">email</i>
+		                      <input type="email" name="email" class="validate">
+		                      <label>Enter email</label>
+		                      </div>
+
 		                      <div class="input-field">
 		                      <i class="material-icons prefix">lock</i>
-		                      <input type="password" name="pass1" placeholder="Enter password">
+		                      <input type="password" name="pass1">
+		                      <label>Enter password</label>
 		                      </div>
-		             		 <input type="submit" name="submit" value="Sign up" class="btn left col s12 discord">
+
+		                      <div class="input-field">
+		                      <i class="material-icons prefix">vpn_key</i>
+		                      <input type="password" name="pass2">
+		                      <label>Confirm password</label>
+		                      </div>
+		             		  <input type="submit" name="submit" value="Sign up" class="waves-effect waves-light btn cbtn left col s12 discord">
 		                
 		                      <div class="clearfix"></div>
 		                    </div>
@@ -66,8 +78,10 @@ $page='home';
 	  				</div>
 	  			</div>
 	  		</div>
-
+	  	</main>
+	
   		<!--modal-->
+
   		<div class="modal fade" id="myModal" role="dialog">
         	<div class="modal-dialog sublime card-panel">
       			<div class="modal-content sublime">
@@ -78,24 +92,26 @@ $page='home';
         				<form action="" method="POST">      
                       		<h3 class="center">Login</h3>
                       
-                      		 <div class="input-field">
-	                      		<i class="material-icons prefix">account_circle</i>
-		                        <input type="text" name="username" placeholder="Enter username">
-	                         </div>
+		                      <div class="input-field">
+		                      <i class="material-icons prefix">account_circle</i>
+		                      <input type="text" name="username">
+		                      <label>Enter username</label>
+		                      </div>
                   
 		                      <div class="input-field">
-			                    <i class="material-icons prefix">lock</i>
-			                    <input type="password" name="pass1" placeholder="Enter password">
+		                      <i class="material-icons prefix">lock</i>
+		                      <input type="password" name="pass1">
+		                      <label>Enter password</label>
 		                      </div>
              
 	                         <p class="right"><a href="#signup" class="modal-trigger">Forgot password</a></p>
-	                         <input type="submit" name="submit" value="Login" class="btn left col s12 discord">
+	                         <input type="submit" name="submit" value="Login" class="cbtn waves-effect waves-light btn left col s12 discord">
                 
                              <div class="clearfix"></div>
                 	    </form>
                 	</div>
 	                <div class="modal-footer sublime">
-	          			<button type="button" class="btn modal-close discord" data-dismiss="modal">Close</button>
+	          			<button type="button" class="cbtn waves-effect waves-light btn modal-close discord" data-dismiss="modal">Close</button>
 	        		</div>
            		</div>
         	</div>

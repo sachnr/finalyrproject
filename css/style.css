@@ -1,7 +1,4 @@
-				#index {
-		    		color: white;
-		    		background-color: #282923 ;
-	    		 	}
+
 	    		#header{
 	    			position:fixed;
 					background-color: #181915;
@@ -10,13 +7,14 @@
 					text-align: center;
 					}
 				#footer{
-					position:fixed;
- 					bottom:0;
 					clear:both;
-					height: 200px;
+					height: 170px;
 					width: 100%;
 					text-align: center;
-					background-color: #141411;}
+					background-color: #141411;
+					height: 100%;
+				}
+
 				.modal-content
 					{
 					position: relative;
@@ -27,9 +25,34 @@
   					border-bottom-left-radius: 100px;
  			 		color: #fff;
  			 	}
- 			 	#sulocation
- 			 	{
- 			 		position: relative;
-					top: 200px;
-					left: 0px;
- 			 	}
+
+  				body {
+    			display: flex;
+    			min-height: 100vh;
+    			flex-direction: column;
+    			height: 100%
+
+  				}
+
+  				main {
+  					font-family: 'arial';
+  					font-weight:bold;
+		    	color: white;
+		    	background-color: #282923 ;
+		    	background: url(../images/erpbg800.png) repeat fixed;
+  				background-position: left;
+  				background-repeat:repeat;
+    			flex: 1 0 auto;
+  				}
+  				.add-height 
+  				{
+    			height: 400px;
+				}
+				.cbtn
+				{
+					font-family: 'arial'; 
+					font-size: 14px;
+					font-weight:bold;
+				}
+
+      
