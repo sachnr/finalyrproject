@@ -8,10 +8,10 @@
 			    <link rel="stylesheet" href="css/materialize.min.css">
 				<link href="css/bootstrap.css" rel="stylesheet">
 			    <link rel="stylesheet" href="css/style.css">
-				<script src="js/materialize.min.js"></script>
+				<script src="js/popper.min.js"></script>
 		    	<script src="js/jquery.js"></script>
-		 		<script src="js/popper.min.js"></script>
-		 		<script src="js/bootstrap.min.js"></script>	 		
+				<script src="js/materialize.min.js"></script>
+		 		<script src="js/bootstrap.min.js"></script>			
 		  	</head>
 		  	
 		  	<body id="index">
