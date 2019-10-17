@@ -14,7 +14,7 @@ include 'header.php';
 
 						By the end of this post, you'll know what makes some of today's best "About Us" and "About Me" pages so great, and how to make your own about page that shares your company's greatness.</p>
           				<div class="info-box visible-xs visible-md visible-lg">
-			  						<a class="cbtn waves-effect waves-light btn discord z-depth-5 col s2 offset-s5" href="#" data-toggle="modal" data-target="#contactus">Contact us</a>
+			  						<a class="cbtn waves-effect waves-light btn discord z-depth-5 col s12 m2 offset-m5" href="#" data-toggle="modal" data-target="#contactus">Contact us</a>
 			            </div>
 	  				</div>
 	  			</div>

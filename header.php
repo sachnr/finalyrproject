@@ -26,8 +26,8 @@
 								<div class="col s6 m3 header z-depth-3">
 									<nav class="navbar navbar-default" style="background-color: #181915;width:100%;height:60px;text-align: center;">
 									    <div class="nav-wrapper">
-										    <a class="brand-logo left" href="index.php"><img src="images/erpban.png" alt="" style="height: 60px;"></a>
-										    <ul id="nav-mobile" class="right hide-on-med-and-down cbtn">
+										    <a class="brand-logo left hide-on-med-and-down" href="index.php"><img src="images/erpban.png" alt="" style="height: 60px;"></a>
+										    <ul id="nav-mobile" class="right cbtn">
 										      	<li class="<?php if($page=="home"){echo "active";} ?>"><a href="index.php">Home</a></li>
 										      	<li class="<?php if($page=="gallery"){echo "active";} ?>"><a href="gallery.php">Gallery</a></li>
 										      	<li class="<?php if($page=="about"){echo "active";} ?>"><a href="about.php">About</a></li>
@@ -35,7 +35,7 @@
 										</div>
 									</nav>
 								</div>
-								<div class="col s4 m2 offset-m9">
+								<div class="col s4 offset-s7 m2 offset-m9">
 				  					<div class="info-box visible-xs visible-md visible-lg">
 				  						<a class="cbtn waves-effect waves-light btn discord z-depth-5"href="#" data-toggle="modal" data-target="#myModal" id="myBtn">log in</a>
 				                    </div>
