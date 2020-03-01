@@ -11,7 +11,8 @@
 				<script src="js/popper.min.js"></script>
 		    	<script src="js/jquery.js"></script>
 				<script src="js/materialize.min.js"></script>
-		 		<script src="js/bootstrap.min.js"></script>			
+		 		<script src="js/bootstrap.min.js"></script>	
+		 		<script src="js/playsound.js"></script>		
 		  	</head>
 		  	
 		  	<body id="index">
@@ -52,18 +53,18 @@
           				<h4 class="modal-title"><center><img src="images/erpban.png" alt="" style="height:60px;"></center></h4>
         			</div>
         			<div class="modal-body sublime">
-        				<form action="" method="POST">      
+        				<form action="authenticate.php" method="POST">      
                       		<h3 class="center">Login</h3>
                       
 		                      <div class="input-field">
 		                      <i class="material-icons prefix">account_circle</i>
-		                      <input type="text" name="username">
-		                      <label>Enter username</label>
+		                      <input type="text" name="mdlid" id="mdlid">
+		                      <label>Enter Collegeid</label>
 		                      </div>
                   
 		                      <div class="input-field">
 		                      <i class="material-icons prefix">lock</i>
-		                      <input type="password" name="pass1">
+		                      <input type="password" name="mdlpass" id="mdlpass">
 		                      <label>Enter password</label>
 		                      </div>
              

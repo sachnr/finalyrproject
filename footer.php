@@ -23,12 +23,7 @@ $page='home';
                       </ul>
                     </div>
             </div>
-        </div>
-            <div class="footer-copyright">
-                <div class="container">
-                  © 2019 Copyright 
-                </div>
-            </div>
+        </div>           
       </div>
       </footer>
 
