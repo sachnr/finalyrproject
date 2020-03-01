@@ -4,7 +4,7 @@
 	 if(!empty($_POST['mdlid']) && !empty($_POST['mdlpass'])){
 	 $user = $_POST['mdlid'];
 	 $pass = $_POST['mdlpass'];
-	 $conn=mysqli_connect("localhost","sachnr","223@#897","loginerp");  
+	 $conn=mysqli_connect("localhost","root","","loginerp");  
 	if(!$conn)
 	 {
 		die(mysqli_error());
