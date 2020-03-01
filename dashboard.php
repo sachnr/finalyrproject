@@ -1,8 +1,10 @@
 <?php
 session_start();
+echo("<script>alert('PHP: user " . $_SESSION['sessuser'] . "');</script>");
 if(!isset($_SESSION['sessuser'])){
    header("Location:index.php");
 }
+
 $title='Dashboard';
 $page='dashboard';
 include 'dashheader.php';
@@ -11,8 +13,7 @@ include 'dashheader.php';
 		<div class="container">
 	  			<div class="row valign-wrapper add-height">
 	  				<div class="col s12 ">
-
-	  						<div class="card-panel z-depth-5 sublime">   
+	  						<div class="card-panel z-depth-5 sublime">
 			                     <ul id="profile-page-about-details" class="collection z-depth-5 ">
 				                  <li class="collection-item">
 				                    <div class="row" style="max-height: 300px; background-color: #FAFAFA;">
@@ -23,6 +24,38 @@ include 'dashheader.php';
 										</div>
 									  </div>
 				                  </li>
+								<table id="user-info" class="table table-bordered table-hover">
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th>Name</th>
+											<th>College ID</th>
+											<th>Address</th>
+											<th>Birth Date</th>
+										</tr>
+									</thead>
+									<script type="text/javascript">
+										$(document).ready( function() {
+											$("#user-info").DataTable({
+												"ajax": {
+													"url":"data.php",
+													"dataSrc": ""
+												},
+												"columns": [
+													{
+														"data": "id", 
+														"class": "row"
+													},
+													{"data": "name"},
+													{"data": "college_id"},
+													{"data": "address"},
+													{"data": "birth_date"}
+												]
+											});
+										} );
+									</script>
+								</table>
+								<!--
 				                  <li class="collection-item">
 				                    <div class="row ">
 				                      <div class="col s5 grey-text darken-1"><i class="mdi-action-wallet-travel"></i> Name</div>
@@ -47,7 +80,7 @@ include 'dashheader.php';
 				                      <div class="col s7 grey-text text-darken-4 right-align">18th June, 1991</div>
 				                    </div>
 				                  </li>
-
+							-->
 		                      <div class="clearfix"></div>
 		                    </div>
 		                    </div>

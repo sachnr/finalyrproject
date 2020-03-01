@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 5.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 01, 2020 at 10:29 AM
--- Server version: 10.4.6-MariaDB
--- PHP Version: 7.3.9
+-- Generation Time: Mar 01, 2020 at 04:26 PM
+-- Server version: 8.0.17
+-- PHP Version: 7.3.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -38,9 +38,55 @@ CREATE TABLE `accounts` (
 --
 
 INSERT INTO `accounts` (`id`, `password`) VALUES
-('', 'test'),
-('admin', 'admin'),
-('sachnr', '1234');
+('admin', 'admin');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user_info`
+--
+
+CREATE TABLE `user_info` (
+  `college_id` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `address` varchar(1000) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `birth_date` date NOT NULL,
+  `id` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `name` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `user_info`
+--
+
+INSERT INTO `user_info` (`college_id`, `address`, `birth_date`, `id`, `name`) VALUES
+('ENGG.', 'MH, IN', '2020-03-01', 'admin', 'SR'),
+('ENGG.', 'UK, IN', '2020-03-01', 'admin', 'SR');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `accounts`
+--
+ALTER TABLE `accounts`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `user_info`
+--
+ALTER TABLE `user_info`
+  ADD KEY `id` (`id`);
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `user_info`
+--
+ALTER TABLE `user_info`
+  ADD CONSTRAINT `user_info_ibfk_1` FOREIGN KEY (`id`) REFERENCES `accounts` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
