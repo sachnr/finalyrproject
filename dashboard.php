@@ -50,7 +50,10 @@ include 'dashheader.php';
 													{"data": "college_id"},
 													{"data": "address"},
 													{"data": "birth_date"}
-												]
+												],
+												"rowCallback": function(row, data, index){
+             										$(row).css('color', 'black')
+          										}
 											});
 										} );
 									</script>

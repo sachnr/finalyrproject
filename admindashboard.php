@@ -53,7 +53,8 @@ include 'addashheader.php';
                 return {
                     // id - user id 
                     "id": table.cell($(this).closest('tr'), 0).data(),
-                    "column": columns[colIdx].data
+                    "column": columns[colIdx].data,
+                    "value": submitdata.value
                 };
               }
             });
