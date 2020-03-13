@@ -1,10 +1,10 @@
 <?php
 	
 	if(isset($_POST["submit"])){
-	 if(!empty($_POST['mdlid']) && !empty($_POST['mdlpass'])){
-	 $user = $_POST['mdlid'];
-	 $pass = $_POST['mdlpass'];
-	 $conn=mysqli_connect("localhost","root","","loginerp");  
+		if(!empty($_POST['mdlid']) && !empty($_POST['mdlpass'])){
+		$user = $_POST['mdlid'];
+		$pass = $_POST['mdlpass'];
+		$conn=mysqli_connect("localhost","root","","loginerp");  
 	if(!$conn)
 	 {
 		die(mysqli_error());
@@ -18,8 +18,12 @@
 			 $dbusername=$row['id'];
 			 $dbpassword=$row['password'];
 		 }
-		 if('admin' == $dbusername && 'admin' ==$dbpassword) { 
-            header("location: admindashboard.php?");
+		 if('admin' == $dbusername && 'admin' == $dbpassword) { 
+			session_start();
+			$_SESSION['sessuser'] = $user;
+			// update it to admindashboard.php
+			header("location: admindashboard.php?");
+			// header("location: admindashboard.php")
             exit;
         }
 		 if($user == $dbusername && $pass == $dbpassword)

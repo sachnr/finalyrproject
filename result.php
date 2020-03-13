@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['sessuser'])){
-   header("Location:index.php");
+   header("Location:result.php");
 }
 $title='Dashboard';
 $page='dashboard';
