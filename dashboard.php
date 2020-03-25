@@ -18,7 +18,8 @@ include 'dashheader.php';
 									dataType: 'json', 
 									type: 'get',
 									success: function(data)
-									{                         		     
+									{ 
+										document.getElementById('pimage').src = data[1].location;                		     
 								       $('#ph').append(data[0].phone);
 								       $('#email').append(data[0].email);
 								       $('#name').append(data[0].name);
@@ -40,7 +41,7 @@ include 'dashheader.php';
 				                    <div class="row" >
 										<div class="col-4">
 											<div class="portrait">
-											     <img src="uploads/sachnr.jpg" alt="batmanandrobin" class="img-fluid circle responsive-img" style="height: 200px;">
+											     <img id="pimage" src="" alt="batmanandrobin" class="img-fluid circle responsive-img" style="height: 200px;">
 											</div>
 										</div>
 									</div>

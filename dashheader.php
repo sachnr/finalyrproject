@@ -65,7 +65,6 @@
 						  <div>
 						  <ul class="cbtn">
 		                  <li class="<?php if($page=="dashboard.php"){echo "active";} ?>"><a href="dashboard.php" class="white-text"> Dashboard<i class="material-icons white-text">web</i></a></li>
-		                  <li class="<?php if($page=="editprofile.php"){echo "active";} ?>"><a href="editprofile.php" class="white-text">Edit Profile<i class="material-icons white-text">list</i></a></li>
 		                  <li class="<?php if($page=="attendence.php"){echo "active";} ?>"><a href="attendence.php" class="white-text">attendence<i class="material-icons white-text">list</i></a></li>
 		                  <li class="<?php if($page=="result.php"){echo "active";} ?>"><a href="result.php" class="white-text">result<i class="material-icons white-text">dashboard</i></a></li>
 		                  <li class="<?php if($page=="messeges.php"){echo "active";} ?>"><a href="messeges.php" class="white-text">messeges<i class="material-icons white-text">chat</i></a></li>
