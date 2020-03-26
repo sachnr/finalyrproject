@@ -36,16 +36,16 @@
 										</div>
 									</nav>
 								</div>
-								<div class="col s4 offset-s7 m2 offset-m9">
+								<!--<div class="col s4 offset-s7 m2 offset-m9">
 				  					<div class="info-box visible-xs visible-md visible-lg">
 				  						<a class="cbtn waves-effect waves-light btn discord z-depth-5"href="#" data-toggle="modal" data-target="#myModal" id="myBtn">log in</a>
 				                    </div>
-						  		</div>
+						  		</div>-->
 						  	</div>
 			  			</div>
 			  		</header>
 		  		</div>
-		<!--modal-->
+		<!--modal
   		<div class="modal fade" id="myModal" role="dialog">
         	<div class="modal-dialog sublime card-panel modalpos">
       			<div class="modal-content sublime" >
@@ -80,4 +80,4 @@
 	        		</div>
            		</div>
         	</div>
-        </div>
+        </div>-->

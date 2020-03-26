@@ -3,8 +3,8 @@ session_start();
 if(!isset($_SESSION['sessuser'])){
    header("Location:index.php");
 }
-$title='adminadd';
-$page='adminadd';
+$title='sendmessege';
+$page='sendmessege';
 include 'addashheader.php';
 ?>
 	<main>

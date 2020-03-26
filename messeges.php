@@ -3,8 +3,8 @@ session_start();
 if(!isset($_SESSION['sessuser'])){
    header("Location:index.php");
 }
-$title='Dashboard';
-$page='dashboard';
+$title='messeges';
+$page='messeges';
 include 'dashheader.php';
 ?>
 	<main>

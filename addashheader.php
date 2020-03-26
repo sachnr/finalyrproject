@@ -46,8 +46,8 @@
 
                   <div>
                     <ul class="cbtn">
-                      <li class="<?php if($page=="admindashboard.php"){echo "active";} ?>"><a href="admindashboard.php" class="white-text">Dashboard<i class="material-icons white-text">web</i></a></li>
-                      <li class="<?php if($page=="sendmessege.php"){echo "active";} ?>"><a href="sendmessege.php" class="white-text">SendMessage<i class="material-icons white-text">mail</i></a></li>
+                      <li class="<?php if($page=="addashboard"){echo "active";} ?>"><a href="admindashboard.php" class="white-text">Dashboard<i class="material-icons white-text">web</i></a></li>
+                      <li class="<?php if($page=="sendmessege"){echo "active";} ?>"><a href="sendmessege.php" class="white-text">SendMessage<i class="material-icons white-text">mail</i></a></li>
                     </ul>
                   </div>
                 </ul>

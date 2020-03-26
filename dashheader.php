@@ -5,7 +5,7 @@
 			  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 			  	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 			    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-			    <link rel="stylesheet" href="css/materialize.min.css">
+			    <link rel="stylesheet" href="css/materialize.css">
 				<link href="css/bootstrap.css" rel="stylesheet">
 			    <link rel="stylesheet" href="css/style.css">
 				<script src="js/popper.min.js"></script>
@@ -61,13 +61,13 @@
 				    <ul id="sidenav-left" class="sidenav sidenav-fixed "style="background-color: #181915;" >
 				    	<div class="user-view">
 				    		<a class="brand-logo " href="dashboard.php"><img src="images/erpban.png" alt="" style="height: 60px;"></a>
-						  </div>
-						  <div>
-						  <ul class="cbtn">
-		                  <li class="<?php if($page=="dashboard.php"){echo "active";} ?>"><a href="dashboard.php" class="white-text"> Dashboard<i class="material-icons white-text">web</i></a></li>
-		                  <li class="<?php if($page=="attendence.php"){echo "active";} ?>"><a href="attendence.php" class="white-text">attendence<i class="material-icons white-text">list</i></a></li>
-		                  <li class="<?php if($page=="result.php"){echo "active";} ?>"><a href="result.php" class="white-text">result<i class="material-icons white-text">dashboard</i></a></li>
-		                  <li class="<?php if($page=="messeges.php"){echo "active";} ?>"><a href="messeges.php" class="white-text">messeges<i class="material-icons white-text">chat</i></a></li>
+						</div>
+					<div>
+						<ul class="cbtn">
+		                  <li class="<?php if($page=="dashboard"){echo "active";} ?>"><a href="dashboard.php" class="white-text"> Home<i class="material-icons white-text">web</i></a></li>
+		                  <li class="<?php if($page=="attendence"){echo "active";} ?>"><a href="attendence.php" class="white-text">attendence<i class="material-icons white-text">list</i></a></li>
+		                  <li class="<?php if($page=="result"){echo "active";} ?>"><a href="result.php" class="white-text">result<i class="material-icons white-text">dashboard</i></a></li>
+		                  <li class="<?php if($page=="messeges"){echo "active";} ?>"><a href="messeges.php" class="white-text">messeges<i class="material-icons white-text">chat</i></a></li>
 		                </ul>
 		            </div>
               		</div>
