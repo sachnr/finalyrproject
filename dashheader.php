@@ -48,7 +48,7 @@
 					<div>
 						<ul class="cbtn">
 		                  <li class="<?php if($page=="dashboard"){echo "active";} ?>"><a href="dashboard.php" class="white-text"> Home<i class="material-icons white-text">web</i></a></li>
-		                  <li class="<?php if($page=="attendence"){echo "active";} ?>"><a href="attendence.php" class="white-text">attendence<i class="material-icons white-text">list</i></a></li>
+		                  <li class="<?php if($page=="syllabus"){echo "active";} ?>"><a href="syllabus.php" class="white-text">Syllabus<i class="material-icons white-text">list</i></a></li>
 		                  <li class="<?php if($page=="timetable"){echo "active";} ?>"><a href="timetable.php" class="white-text">TimeTable<i class="material-icons white-text">dashboard</i></a></li>
 		                  <li class="<?php if($page=="messeges"){echo "active";} ?>"><a href="messeges.php" class="white-text">messeges<i class="material-icons white-text">chat</i></a></li>
 		                </ul>
