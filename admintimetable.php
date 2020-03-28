@@ -85,7 +85,7 @@ include 'addashheader.php';
   
 
     <div class="container">
-      <div class="row valign-wrapper add-height">
+      <div class="row valign-wrapper add-height" style="height: 80rem;">
         <div class="card-panel z-depth-5 "style="background-color: #181915;width: 100%">
           <h4 class="center">Change TimeTable</h4>
           <table id="editt" class="display table table-bordered table-hover">

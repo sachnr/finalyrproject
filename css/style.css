@@ -155,3 +155,48 @@
 				  background-color: rgba(170, 213, 213, 0.5);
 				}
 		
+
+		
+		.dropdown-content{
+			min-width: 300px !important;
+			width: 300px !important;
+			height:auto !important;
+			position: static;
+			background-color:#181915;
+			padding: 15px;
+			overflow: auto;
+			white-space: nowrap;
+			z-index: auto;
+			margin-left: -1px;
+			border: 0.1px solid white;
+		}
+
+		.dropdown-content li{
+			color: #fff;
+		}
+
+		.media-meta{
+			float: right;
+			font-size: 1.1rem;
+			color: grey;
+		}
+
+		.dropdown-content li > a, .dropdown-content li > span{
+			float: left;
+			color: #fff;
+			font-size:1.2rem;
+			font-family: 'arial';
+			font-weight:bold;
+			
+		}
+
+		.dropdown-content li:hover, .dropdown-content li.active{
+			background-color:#181915;
+			color: #fff;
+		}
+
+		.hea{
+			font-size:1.5rem;
+			font-family: 'arial';
+			font-weight:bold;
+		}

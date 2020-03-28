@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 27, 2020 at 07:55 PM
+-- Generation Time: Mar 28, 2020 at 10:30 PM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.9
 
@@ -85,7 +85,7 @@ CREATE TABLE `user_info` (
 --
 
 INSERT INTO `user_info` (`id`, `phone`, `email`, `name`, `fname`, `dob`, `course`, `branch`, `semester`, `urno`) VALUES
-('ayush', '9410204512', 'aayushjuyal0@gmail.com', 'ayush juyal', 'juyal', '1997-09-12', 'Bachelor of technology', 'computer science (BDA)', 8, 2011614),
+('ayush', '9410204512', 'aayushjuyal0@gmail.com', 'ayush juyal', 'juyal', '1997-09-12', 'Bachelor of technology', 'computer science (BDA)', 7, 2011614),
 ('sachnr', '9897820553', 'sachinrawat544@gmail.com', 'Sachin Rawat', 'jaswant singh', '1997-11-19', 'Bachelor of technology', 'computer science (BDA)', 8, 2011635);
 
 --
