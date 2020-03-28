@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 25, 2020 at 01:05 PM
+-- Generation Time: Mar 27, 2020 at 07:55 PM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.9
 
@@ -58,8 +58,8 @@ CREATE TABLE `images` (
 --
 
 INSERT INTO `images` (`id`, `location`) VALUES
-('sachnr', 'uploads/sachnr.jpg'),
-('ayush', 'uploads/ayush.jpg');
+('ayush', 'uploads/ayush.jpg'),
+('sachnr', 'uploads/sachnr.jpg');
 
 -- --------------------------------------------------------
 
@@ -85,8 +85,8 @@ CREATE TABLE `user_info` (
 --
 
 INSERT INTO `user_info` (`id`, `phone`, `email`, `name`, `fname`, `dob`, `course`, `branch`, `semester`, `urno`) VALUES
-('sachnr', '9897820553', 'sachinrawat544@gmail.com', 'Sachin Rawat', 'jaswant singh', '1997-11-19', 'Bachelor of technology', 'computer science (BDA)', 8, 2011635),
-('ayush', '9410204512', 'aayushjuyal0@gmail.com', 'ayush juyal', 'juyal', '1997-09-12', 'Bachelor of technology', 'CS(BDA)', 8, 2011614);
+('ayush', '9410204512', 'aayushjuyal0@gmail.com', 'ayush juyal', 'juyal', '1997-09-12', 'Bachelor of technology', 'computer science (BDA)', 8, 2011614),
+('sachnr', '9897820553', 'sachinrawat544@gmail.com', 'Sachin Rawat', 'jaswant singh', '1997-11-19', 'Bachelor of technology', 'computer science (BDA)', 8, 2011635);
 
 --
 -- Indexes for dumped tables
@@ -96,18 +96,21 @@ INSERT INTO `user_info` (`id`, `phone`, `email`, `name`, `fname`, `dob`, `course
 -- Indexes for table `accounts`
 --
 ALTER TABLE `accounts`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `id` (`id`);
 
 --
 -- Indexes for table `images`
 --
 ALTER TABLE `images`
+  ADD UNIQUE KEY `id_2` (`id`),
   ADD KEY `id` (`id`) USING BTREE;
 
 --
 -- Indexes for table `user_info`
 --
 ALTER TABLE `user_info`
+  ADD UNIQUE KEY `id_2` (`id`),
   ADD KEY `id` (`id`);
 
 --

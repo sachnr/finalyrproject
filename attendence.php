@@ -7,6 +7,19 @@ $title='attendence';
 $page='attendence';
 include 'dashheader.php';
 ?>
+				<script type="text/javascript" charset="utf8">
+	  					$(document).ready(function(){ 				
+						 		$.ajax({
+									url: 'data.php',
+									dataType: 'json', 
+									type: 'get',
+									success: function(data)
+									{  		       
+										document.getElementById('himage').src = data[1].location;	   				       				       
+							       }					      
+							    });
+						});
+	  			</script>
 	<main>
 		<div class="container">
 	  			

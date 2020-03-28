@@ -8,18 +8,16 @@ $title='Dashboard';
 $page='dashboard';
 include 'dashheader.php';
 ?>
-	<main>
-		<div class="container">
-	  			<div class="row valign-wrapper" style="height: 1000px;">
-	  				<script type="text/javascript">
-	  					$(document).ready(function(){		  				
+				<script type="text/javascript" charset="utf8">
+	  					$(document).ready(function(){ 				
 						 		$.ajax({
 									url: 'data.php',
 									dataType: 'json', 
 									type: 'get',
 									success: function(data)
-									{ 
-										document.getElementById('pimage').src = data[1].location;                		     
+									{  		  
+										document.getElementById('pimage').src = data[1].location;         
+										document.getElementById('himage').src = data[1].location;	   
 								       $('#ph').append(data[0].phone);
 								       $('#email').append(data[0].email);
 								       $('#name').append(data[0].name);
@@ -29,11 +27,14 @@ include 'dashheader.php';
 								       $('#branch').append(data[0].branch);
 								       $('#sem').append(data[0].semester);
 								       $('#roll').append(data[0].urno);	
+								       				       
 							       }					      
 							    });
-							
 						});
-	  				</script>
+	  			</script>
+	<main>
+		<div class="container">
+	  			<div class="row valign-wrapper" style="height: 1000px;">	  				
 	  				<div class="col s12 " id="user-info" style="background-color: #181915;">
 	  						<div class="card-panel z-depth-5  " style="background-color: #181915;">
 			                     <ul id="profile-page-about-details" class="collection z-depth-3" >

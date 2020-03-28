@@ -139,6 +139,12 @@ include 'addashheader.php';
                   <th>Password</th>
                 </tr>
               </thead>    
+              <tfoot>
+                <tr>
+                  <th>ID</th>
+                  <th>Password</th>
+                </tr>
+              </tfoot> 
             </table>
           </div>
 
@@ -157,7 +163,21 @@ include 'addashheader.php';
                   <th>semester</th>
                   <th>u.rno.</th>
                 </tr>
-              </thead>    
+              </thead> 
+              <tfoot>
+                <tr>
+                  <th>ID</th>
+                  <th>Phone</th>
+                  <th>Email</th>
+                  <th>Name</th>
+                  <th>FathersName</th>
+                  <th>DOB</th>
+                  <th>course</th>
+                  <th>branch</th>
+                  <th>semester</th>
+                  <th>u.rno.</th>
+                </tr>
+              </tfoot>   
             </table>
           </div>
 
@@ -168,7 +188,13 @@ include 'addashheader.php';
                   <th>ID</th>
                   <th>Location</th>
                 </tr>
-              </thead>    
+              </thead>   
+              <tfoot>
+                <tr>
+                  <th>ID</th>
+                  <th>Location</th>
+                </tr>
+              </tfoot>  
             </table>
           </div>
           
