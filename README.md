@@ -32,5 +32,5 @@ timetable.php
 
 messeges.php
 
-gettable.php  ////serverside script for getting timetable
+gettable.php  //serverside script for getting timetable
 
