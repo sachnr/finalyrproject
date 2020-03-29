@@ -200,3 +200,18 @@
 			font-family: 'arial';
 			font-weight:bold;
 		}
+
+		.tableass{
+			font-family: 'arial';
+			font-weight:bold;
+			background-color:#fff;
+			overflow: auto;
+			white-space: nowrap;
+			z-index: auto;
+			margin-left: -1px;
+			border: 0.1px solid white;
+			padding: 15px;
+		}
+
+
+

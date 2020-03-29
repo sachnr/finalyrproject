@@ -47,7 +47,9 @@
                     <ul class="cbtn">
                       <li class="<?php if($page=="addashboard"){echo "active";} ?>"><a href="admindashboard.php" class="white-text">Dashboard<i class="material-icons white-text">web</i></a></li>
                       <li class="<?php if($page=="tt"){echo "active";} ?>"><a href="admintimetable.php" class="white-text">ChangeTimeTable<i class="material-icons white-text">dashboard</i></a></li>
+                      <li class="<?php if($page=="adresult"){echo "active";} ?>"><a href="adminresult.php" class="white-text">Upload Result<i class="material-icons white-text">file_upload</i></a></li>
                       <li class="<?php if($page=="notifications"){echo "active";} ?>"><a href="notifications.php" class="white-text">send notification<i class="material-icons white-text">notifications</i></a></li>
+                      <li class="<?php if($page=="assignment"){echo "active";} ?>"><a href="adminassignment.php" class="white-text">Upload assignment<i class="material-icons white-text">file_upload</i></a></li>
                     </ul>
                   </div>
                 </ul>

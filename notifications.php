@@ -27,7 +27,7 @@ if(isset($_POST['submit'])){
 	  			<div class="col s12 " style="background-color: #181915;height: auto;">
   					<div class="card-panel z-depth-5  " style="background-color: #181915;">
 						<div class="card-content white-text">
-							<h4 class="card-title center" style="font-family:'arial';font-size: 18px;font-weight:bold;">Send notification to All Users</h4>
+							<h4 class="card-title center" style="font-family:'arial';font-size: 18px;font-weight:bold;">Send Global notifications</h4>
 								<form action="#" method="POST">      
 
 								<div class="input-field" style="height: 5rem;">

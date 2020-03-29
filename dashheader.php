@@ -65,12 +65,12 @@
 										    return Math.floor(seconds) + " seconds";
 										}
 
-										var t1 = data[0].datetime.split(/[- :]/);;
-										var d1 = new Date(Date.UTC(t1[0], t1[1]-1, t1[2], t1[3], t1[4], t1[5]))
-										var t2 = data[1].datetime.split(/[- :]/);;
-										var d2 = new Date(Date.UTC(t2[0], t2[1]-1, t2[2], t2[3], t2[4], t2[5]))
-										var t3 = data[2].datetime.split(/[- :]/);;
-										var d3 = new Date(Date.UTC(t1[0], t2[1]-1, t2[2], t2[3], t2[4], t2[5]))
+										var t1 = data[0].datetime.split(/[- :]/);
+										var d1 = new Date(Date.UTC(t1[0], t1[1]-1, t1[2], t1[3], t1[4], t1[5]));
+										var t2 = data[1].datetime.split(/[- :]/);
+										var d2 = new Date(Date.UTC(t2[0], t2[1]-1, t2[2], t2[3], t2[4], t2[5]));
+										var t3 = data[2].datetime.split(/[- :]/);
+										var d3 = new Date(Date.UTC(t1[0], t2[1]-1, t2[2], t2[3], t2[4], t2[5]));
 										var d1 = timeSince(d1);
 										var d2 = timeSince(d2);
 										var d3 = timeSince(d3);
@@ -131,7 +131,8 @@
 		                  <li class="<?php if($page=="dashboard"){echo "active";} ?>"><a href="dashboard.php" class="white-text"> Home<i class="material-icons white-text">web</i></a></li>
 		                  <li class="<?php if($page=="syllabus"){echo "active";} ?>"><a href="syllabus.php" class="white-text">Syllabus<i class="material-icons white-text">list</i></a></li>
 		                  <li class="<?php if($page=="timetable"){echo "active";} ?>"><a href="timetable.php" class="white-text">TimeTable<i class="material-icons white-text">dashboard</i></a></li>
-		                  <li class="<?php if($page=="messeges"){echo "active";} ?>"><a href="messeges.php" class="white-text">messeges<i class="material-icons white-text">chat</i></a></li>
+		                  <li class="<?php if($page=="result"){echo "active";} ?>"><a href="result.php" class="white-text">ExamResults<i class="material-icons white-text">assignment_turned_in</i></a></li>
+		                  <li class="<?php if($page=="Assignments"){echo "active";} ?>"><a href="messeges.php" class="white-text">Assignments<i class="material-icons white-text">assignment_turned_in</i></a></li>
 		                </ul>
 		            </div>
               		</div>
